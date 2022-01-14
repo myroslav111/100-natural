@@ -1,3 +1,6 @@
+body{
+    font-family: $fontFamilyMain;
+}
 p,
 h1,
 h2,
@@ -19,10 +22,10 @@ img {
   height: auto;
 }
 
-.list {
+li {
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
 }
