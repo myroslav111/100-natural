@@ -3,7 +3,7 @@
 // color
 // font seze
 
-$fontFamilyMain: "DM Sans";
+// npm run$fontFamilyMain: "DM Sans";
 $fontsecond: "Titan One";
 
 // key color
@@ -45,7 +45,7 @@ $fontSize: (
 
     'pretitle-hero-laptop': 38px,
     'title-hero-laptop': 58px,
-    'lable-size-mobile': 30px
+    'lable-size-laptop': 30px
 
 );
 @function getFont($key) {
