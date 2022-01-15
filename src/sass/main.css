@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+/* .example {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #424242;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #009688;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  // Путь к изображениям из SASS-файла всегда такой, как из папки css
+  background-image: url('../images/demo.jpg');
+  background-size: cover;
+  background-position: center;
+} */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.contacts {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(6%, #ffffff), color-stop(6%, #fff5f6), to(#fff5f6));
+  background-image: linear-gradient(to bottom, #ffffff 6%, #fff5f6 6%, #fff5f6 100%);
+}
+
+.contacts__box {
+  width: 220px;
+  height: 427px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  margin: 0 auto;
+  padding: 43px 21px 43px 20px;
+}
+
+.contacts__box:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts__box--cafe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 16px;
+  background-color: #f0d1a5;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.contacts__box--food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+  height: 16px;
+  background-color: #c2e297;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.contacts__title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.contacts__subtitle {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.contacts__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__day {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #000000;
+}
+
+.contacts__time {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+
+.contacts__item-time:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts__item-time:last-child {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__link {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.contacts-button__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts-button__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  border: none;
+  width: 161px;
+  height: 44px;
+  background: #d41443;
+  border-radius: 22px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #c7133e;
+  color: #ffffff;
+}
+
+.button::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 2px;
+  margin-left: 8px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover::after {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  border-right: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+}
+
+.button-two {
+  background-color: #ffffff;
+  color: #d41443;
+  margin-bottom: 23px;
+}
+
+.button-two:hover {
+  background-color: #ecebeb;
+  color: #d41443;
+}
+
+.button-two::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #d41342;
+  border-top: 2px solid #d41342;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 2px;
+  margin-left: 8px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-two:hover::after {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  border-right: 2px solid #d41443;
+  border-top: 2px solid #d41443;
+}
+/*# sourceMappingURL=main.css.map */
