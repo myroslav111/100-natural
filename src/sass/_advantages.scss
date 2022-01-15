@@ -9,23 +9,37 @@
 }
 
 .advantages__container{
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // margin-right: auto;
+    // margin-left: auto;
+    // @media screen and (max-width: 767.99px) {
+    //     max-width: 480px;
+    // }
+    // @media screen and (min-width: 768px) {
+    //     max-width: 640px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     max-width: 980px;
+    // }
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: auto;
     margin-left: auto;
-    @media screen and (max-width: 767.99px) {
-        max-width: 480px;
+    margin-right: auto;
+    @media screen and (min-width: 480px) {
+        width: 480px;
     }
     @media screen and (min-width: 768px) {
-        max-width: 640px;
+        width: 768px;
     }
     @media screen and (min-width: 1200px) {
-        max-width: 980px;
+        width: 1200px;
     }
 }
 
-.advantages__container {
-}
+
+
 .container {
 }
 .visually-hidden {
