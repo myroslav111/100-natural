@@ -1,0 +1,23 @@
+.about {
+  background-color: getColor('background-about');
+  padding-top: 125px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 130px;
+  }
+}
+.about-wrapper__pre-title {
+  font-family: Titan One;
+  font-size: getFont('lable-size-mobile');
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor('lable-color-text');
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
