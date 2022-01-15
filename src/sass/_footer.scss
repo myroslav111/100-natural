@@ -20,14 +20,24 @@ footer {
   @media screen and (min-width: 768px) {
     bottom: 73px;
   }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 45px;
+  }
 }
 
 .footer__wrapper {
+  margin-bottom: 65px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
 
     margin-bottom: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 106px;
   }
 }
 
@@ -59,6 +69,19 @@ footer {
 
     margin-bottom: 16px;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 30px;
+    line-height: 1.13;
+
+    margin-bottom: 15px;
+  }
+}
+
+.footer__text--begin {
+  @media screen and (min-width: 1200px) {
+    margin-right: 9px;
+  }
 }
 
 .footer__title {
@@ -75,13 +98,20 @@ footer {
     line-height: 1.15;
     letter-spacing: 0.06em;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.footer__title--begin {
+  @media screen and (min-width: 1200px) {
+    margin-right: 18px;
+  }
 }
 
 .footer__connection {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 65px;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -92,6 +122,10 @@ footer {
   display: flex;
   justify-content: end;
   margin-bottom: 46px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .footer__item {
@@ -170,6 +204,12 @@ footer {
     font-size: 14px;
     line-height: 1.86;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer__contact--text {
@@ -194,9 +234,14 @@ footer {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 8px;
 
     line-height: 1.86;
     letter-spacing: 0.02em;
+
+    padding-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
   }
 }
