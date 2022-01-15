@@ -11,16 +11,6 @@
 .background-header {
   background-color: #ffb8ca;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding-top: 10px;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
 
 .header__hero {
   padding-top: 135px;
