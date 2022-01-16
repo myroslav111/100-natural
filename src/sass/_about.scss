@@ -7,14 +7,13 @@
   }
 }
 
-// .bcg-wrap-milk {
-//   margin: 0 auto;
-//   background-image: url('../images/About/mobail/about2_png.png');
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   background-position: center;
-//   max-width: 480px;
-// }
+.bcg-wrap-milk {
+  margin: 0 auto;
+  background-image: url('../images/About/mobail/about2_png.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 640px;
+}
 .about-wrapper__pre-title {
   font-family: Titan One;
   font-size: getFont('lable-size-mobile');
