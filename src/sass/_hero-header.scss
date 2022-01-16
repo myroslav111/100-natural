@@ -35,12 +35,23 @@
     padding-bottom: 6px;
 }
 
+.header__wrapper{
+   @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+   
+  }
+}
+
 .header__menu{
   display: none;
 
   @media screen and (min-width: 1200px) {
     display: block;
- 
+    margin-right: 110px;
   }
 }
 
@@ -126,7 +137,7 @@ color: #fff;
       width: 30px;
       height: 25px;
       z-index: 50;
-
+      margin-right: 30px;
      &::before,
      &::after{
          content: '';
