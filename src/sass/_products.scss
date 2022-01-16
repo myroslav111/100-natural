@@ -1,0 +1,84 @@
+.products{
+    padding-top: 60px;
+    padding-bottom: 49px;
+}
+
+.pre-title{
+    font-family: Titan One;
+font-style: normal;
+font-weight: 400;
+font-size: getFont('lable-size-mobile');
+line-height: 1.17;
+text-align: center;
+text-transform: uppercase;
+color: getColor('lable-color-text');
+margin-bottom: 15px;
+}
+
+.products_title{
+    font-family: Titan One;
+font-style: normal;
+font-weight: 400;
+font-size: getFont('title-secondary-mobile');
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: getColor('title-color-main-text');
+margin-bottom: 144px;
+}
+
+.icecream_item{
+    background-color: getColor('background-hero');
+    border-radius: 24px;
+    width: 280px;
+    position: relative;
+    &:not(:last-child){
+        margin-bottom: 130px;
+    }
+}
+
+.icecream_title{
+    font-family: "Titan One";
+font-style: normal;
+font-weight: normal;
+font-size: getFont('title-card-mobile');
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: getColor('mine-color-text');
+margin-bottom: 66px;
+&::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Products/mobail/products1_webp.webp');
+    background-repeat: no-repeat;
+    }
+}
+
+.icecream_text{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: 700;
+font-size: getFont('secondary-size-mobile');
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.04em;
+color: getColor('mine-color-text');
+}
+
+.icecream_btn{
+    background-color: getColor('mine-color-text');
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin: auto;
+    display: block;
+}

@@ -1,8 +1,10 @@
 .contacts {
-  background-image: linear-gradient(to bottom, #ffffff 6%, #fff5f6 6%, #fff5f6 100%);
+  background-image: linear-gradient(to bottom, #ffffff 7%, #fff5f6 7%, #fff5f6 100%);
+  padding-top: 43px;
+  padding-bottom: 103px;
 }
 
-.contacts__box {
+.contacts__item {
   width: 220px;
   height: 427px;
   background-color: #ffffff;
@@ -68,8 +70,34 @@
   line-height: 1.5;
   color: #907e82;
   margin-bottom: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #e1e1e1;
+
+  &:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    margin-top: 25px;
+  }
+}
+
+.contacrs__list--working {
+  margin-bottom: 25px;
+
+  &:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    margin-top: 25px;
+  }
+}
+
+.contacrs__item--working {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__day {
@@ -88,20 +116,6 @@
   font-size: 12px;
   line-height: 1.86;
   color: #ffa5ba;
-}
-
-.contacts__item-time {
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
-.contacts__item-time {
-  &:last-child {
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #e1e1e1;
-  }
 }
 
 .contacts__link {
@@ -161,10 +175,13 @@
   border-top: 2px solid #ffffff;
 }
 
+.button-one {
+  margin-top: 54px;
+}
+
 .button-two {
   background-color: #ffffff;
   color: #d41443;
-  margin-bottom: 23px;
 }
 
 .button-two:hover {

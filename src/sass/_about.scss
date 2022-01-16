@@ -1,0 +1,58 @@
+.about {
+  background-color: getColor('background-about');
+  padding-top: 125px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 130px;
+  }
+}
+.about-wrapper__pre-title {
+  font-family: Titan One;
+  font-size: getFont('lable-size-mobile');
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor('lable-color-text');
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.about-wrapper__inner {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+  @media screen and (max-width: 480px) {
+    width: 200px;
+  }
+  @media screen and (mix-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (mix-width: 1200px) {
+    margin-bottom: 55px;
+  }
+}
+
+.about-wrapper__title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('title-color-main-text');
+  @media screen and (min-width: 768px) {
+    font-size: getFont('title-hero-mobile');
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: getFont('title-hero-laptop');
+    line-height: 1.15;
+  }
+}

@@ -12,34 +12,76 @@ footer {
   content: '';
   position: absolute;
   width: 100%;
-  // height: 0px;
   left: 0px;
   bottom: 89px;
 
   border: 1px solid #e1e1e1;
-}
 
-.container {
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: 480px;
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: 768px) {
+    bottom: 73px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 45px;
   }
 }
 
-.footer__text--begin,
-.footer__text--end {
+.footer__wrapper {
+  margin-bottom: 65px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 106px;
+  }
+}
+
+.footer__slogan {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 43px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__text {
   font-family: Titan One;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
   color: #ffa5ba;
+
+  margin-bottom: 17px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 30px;
+    line-height: 1.13;
+
+    margin-bottom: 15px;
+  }
 }
 
-.footer__text--end {
-  margin-bottom: 17px;
+.footer__text--begin {
+  @media screen and (min-width: 1200px) {
+    margin-right: 9px;
+  }
 }
 
 .footer__title {
@@ -51,19 +93,28 @@ footer {
   text-transform: uppercase;
   color: #d41443;
 
-  display: block;
-  margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 
-// .footer__text br {
-//   @media screen and (min-width: 1200px) {
-//     display: none;
-//   }
-// }
-
-.footer__title br {
+.footer__title--begin {
   @media screen and (min-width: 1200px) {
-    display: none;
+    margin-right: 18px;
+  }
+}
+
+.footer__connection {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -71,18 +122,32 @@ footer {
   display: flex;
   justify-content: end;
   margin-bottom: 46px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .footer__item {
   width: 32px;
   height: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .footer__item:not(:last-child) {
   margin-right: 28.24px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
 }
 
 .footer__link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,6 +155,7 @@ footer {
   height: 100%;
   border-radius: 50%;
   background-color: #fea5bb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__link:hover,
@@ -108,6 +174,9 @@ footer {
 }
 
 .footer__icon.telegram {
+  position: absolute;
+  top: 27%;
+  left: 15%;
   width: 19.2px;
   height: 14.93px;
 
@@ -128,34 +197,56 @@ footer {
 }
 
 .footer__contact {
+  display: flex;
+  justify-content: end;
   font-family: DM Sans;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
   text-align: right;
-  color: #000000;
 
-  margin-bottom: 65px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.02em;
+  }
 }
 
-.footer__tel {
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.83;
+.footer__contact--text {
+  margin-right: 3px;
+  color: #000000;
+}
+
+.footer__contact--tel {
   color: #d41443;
 }
 
-.footer__copyright--begin,
-.footer__copyright--end {
+.footer__copyright {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   color: #907e82;
-}
 
-.footer__copyright--end {
   padding-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+
+    padding-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
 }
