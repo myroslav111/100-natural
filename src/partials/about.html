@@ -1,35 +1,41 @@
 <section class="about">
+  <div class="bcg-wrap-milk">
   <div class="about-wrapper container">
     <p class="about-wrapper__pre-title">tradition and love</p>
     <div class="about-wrapper__inner">
       <h2 class="about-wrapper__title">how it’s made?</h2>
     </div>
-    <picture>
-      <source
-        srcset="
-          images/About/desktop/about2_png_desktop.png    1x,
-          images/About/desktop/about2@2x_png_desktop.png 2x
-        "
-        media="(min-width:1200px)"
-      />
-      <source
-        srcset="
-          /images/About/tablet/about_png_tablet.png   1x,
-          images/About/tablet/about@2x_png_tablet.png 2x
-        "
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="images/About/mobail/about1_png.png 1x, images/About/mobail/about1@2x_png.png 2x"
-        media="(min-width:480px)"
-      />
+    <div class="about-wrapper__position">
+<div class="about-wrapper__img-wrap">
+      <picture>
+        <source
+          srcset="
+            images/About/desktop/about2_png_desktop.png    1x,
+            images/About/desktop/about2@2x_png_desktop.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            /images/About/tablet/about_png_tablet.png   1x,
+            images/About/tablet/about@2x_png_tablet.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="images/About/mobail/about1_png.png 1x, 
+          images/About/mobail/about1@2x_png.png 2x"
+          media="(min-width:480px)"
+        />
 
-      <img
-        class="section-team__img"
-        src="images/About/tablet/about_png_tablet.png"
-        alt="Изображение коровы с графином молока"
-      />
-    </picture>
+        <img
+          class="about-wrapper__img"
+          src="images/About/tablet/about_png_tablet.png"
+          alt="Изображение коровы с графином молока"
+        />
+      </picture>
+    </div>
+
     <!-- <img class="about-wrapper__img" src="" alt="Изображение коровы с графином молока" /> -->
     <div class="text-inner">
       <p class="text-inner__top">
@@ -42,7 +48,9 @@
         maximus. Cras massa nibh, tincidunt.
       </p>
       <p class="text-inner__bottom">Aliquam erat volutpat. Aenean accumsan</p>
+      <button class="about-btn" type="button">Read more</button>
     </div>
-    <button type="button"></button>
+    </div>
+    
   </div>
 </section>
