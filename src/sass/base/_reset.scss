@@ -31,3 +31,9 @@ li {
 a {
   text-decoration: none;
 }
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
