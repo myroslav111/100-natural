@@ -2,7 +2,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: #ffb8ca;
-  margin-bottom: 100px;
+
   @media screen and (min-width: 768px) {
     padding-top: 36px;
   }
@@ -21,6 +21,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    z-index: 1;
   }
 
   @media screen and (min-width: 1200px) {
@@ -260,16 +261,17 @@
   background-color: #ffb8ca;
 }
 .hero {
-  padding-top: 185px;
+  padding-top: 135px;
   padding-bottom: 154px;
   @media screen and (min-width: 768px) {
-    padding-top: 102px;
+    padding-top: 15px;
     padding-bottom: 28px;
     padding-left: 19px;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 171px;
+    padding-top: 84px;
     padding-left: 100px;
+    padding-bottom: 55px;
   }
 }
 
@@ -298,6 +300,7 @@
     max-width: 162px;
   }
   @media screen and (min-width: 1200px) {
+    display: inline-table;
     padding-left: 0px;
     font-size: 38px;
     line-height: 1.15;
@@ -353,7 +356,7 @@
 
 .hero__img-circle--mob {
   position: absolute;
-  top: 75px;
+  top: 30px;
   right: 0;
   z-index: 1;
   @media screen and (min-width: 480px) {
@@ -364,11 +367,11 @@
 .hero__img-icecream--mob {
   position: absolute;
   z-index: 2;
-  top: 95px;
+  top: 45px;
   right: 25px;
   @media screen and (min-width: 480px) {
-    top: 95px;
-    right: 100px;
+    top: 45px;
+    right: 70px;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -380,13 +383,13 @@
   @media screen and (min-width: 480px) {
     display: block;
     position: absolute;
-    top: 75px;
-    right: 30px;
+    top: 30px;
+    right: 0;
   }
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    top: 41px;
+    top: -58px;
     right: 145px;
   }
   @media screen and (min-width: 1200px) {
@@ -400,7 +403,7 @@
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    top: 65px;
+    top: -23px;
     right: 250px;
   }
   @media screen and (min-width: 1200px) {
@@ -466,52 +469,14 @@
   border-radius: 50%;
 }
 
-.hero__img-cafe--tab {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 94px;
-    right: 34px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}
-
-.hero__img-trucks--tab {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 151px;
-    right: 34px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}
-
-.hero__img-girls--tab {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 268px;
-    right: 44px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}
-
 .hero__img-circle--desktop {
   display: none;
   @media screen and (min-width: 1200px) {
     display: block;
     position: absolute;
-    top: 32px;
+    top: -45px;
     right: 200px;
+    z-index: 0;
   }
 }
 
@@ -520,46 +485,65 @@
   @media screen and (min-width: 1200px) {
     display: block;
     position: absolute;
-    top: 53px;
+    top: -7px;
     right: 360px;
   }
 }
 
-.hero__img-girls--desktop {
-  display: none;
-  @media screen and (min-width: 1200px) {
-    display: block;
+.hero__box-girls {
+  @media screen and (min-width: 768px) {
+    width: 168px;
+    height: 133px;
     position: absolute;
-    top: 376px;
-    right: 34px;
+    top: 181px;
+    right: 44px;
+    background-image: url(../images/HeroHeader/tablet/Hero_header4_png_tablet.png);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 293px;
+    height: 232px;
+    position: absolute;
+    top: 317px;
+    right: 40px;
+    background-image: url(../images/HeroHeader/desktop/Hero_header8png_desktop.png);
   }
 }
 
-.hero__img-trucks--desktop {
-  display: none;
-  @media screen and (min-width: 1200px) {
-    display: block;
+.hero__box-cafe {
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    width: 51px;
+    height: 43px;
     position: absolute;
-    top: 80px;
-    right: 34px;
+    top: 5px;
+    right: 10px;
+    background-image: url(../images/HeroHeader/tablet/16cafe.png);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 92px;
+    height: 76px;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    background-image: url(../images/HeroHeader/desktop/Hero_header6png_desktop.png);
   }
 }
 
-.hero__img-cafe--desktop {
-  display: none;
-  @media screen and (min-width: 1200px) {
-    display: block;
+.hero__box-trucks {
+  @media screen and (min-width: 768px) {
+    width: 51px;
+    height: 43px;
     position: absolute;
-    top: 160px;
-    right: 34px;
+    top: 60px;
+    right: 18px;
+    background-image: url(../images/HeroHeader/tablet/23trucks.png);
   }
-}
-
-.bg-img {
-  width: 168px;
-  height: 133px;
-  position: absolute;
-  top: 268px;
-  right: 44px;
-  background-image: url(../images/HeroHeader/tablet/Hero_header4_png_tablet.png);
+  @media screen and (min-width: 1200px) {
+    width: 92px;
+    height: 76px;
+    position: absolute;
+    top: 134px;
+    right: 28px;
+    background-image: url(../images/HeroHeader/desktop/Hero_header7png_desktop.png);
+  }
 }
