@@ -4,33 +4,10 @@
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: #ffb8ca;
-  margin-bottom: 100px;
+
   @media screen and (min-width: 768px) {
     padding-top: 36px;
   }
-}
-
-.header__container {
-  // padding-top: 6px;
-  // padding-bottom: 6px;
-  //   width: 100%;
-
-  //   margin: 0 auto;
-  //   padding-left: 15px;
-  //   padding-right: 15px;
-  //   outline: 1px solid red;
-  //   @media screen and (min-width: 480px) {
-  //     min-width: 480px;
-  //   }
-
-  //   @media screen and (min-width: 768px) {
-  //     min-width: 768px;
-  //   }
-
-  //   @media screen and (min-width: 1200px) {
-  //     width: 1200px;
-  //   }
-  // margin-bottom: 50px;
 }
 
 .header__body {
@@ -200,7 +177,10 @@
   }
 }
 
-.header__hero {
+.hero_bg {
+  background-color: #ffb8ca;
+}
+.hero {
   padding-top: 185px;
   padding-bottom: 154px;
   @media screen and (min-width: 768px) {
@@ -212,6 +192,10 @@
     padding-top: 171px;
     padding-left: 100px;
   }
+}
+
+.hero__container {
+  position: relative;
 }
 
 .header__title {
@@ -290,20 +274,27 @@
 
 .hero__img-circle--mob {
   position: absolute;
-  top: 100px;
+  top: 75px;
   right: 0;
   z-index: 1;
+  @media screen and (min-width: 480px) {
+    top: 75px;
+    right: 50px;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.hero__img-icecream {
+.hero__img-icecream--mob {
   position: absolute;
   z-index: 2;
-  top: 110px;
+  top: 95px;
   right: 25px;
-
+  @media screen and (min-width: 480px) {
+    top: 95px;
+    right: 100px;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -371,6 +362,7 @@
   flex-direction: column;
 }
 .hero__text--tab {
+  position: relative;
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -437,8 +429,8 @@
   @media screen and (min-width: 1200px) {
     display: block;
     position: absolute;
-    top: 52px;
-    right: 80px;
+    top: 32px;
+    right: 200px;
   }
 }
 
@@ -447,5 +439,37 @@
   @media screen and (min-width: 1200px) {
     display: block;
     position: absolute;
+    top: 53px;
+    right: 360px;
+  }
+}
+
+.hero__img-girls--desktop {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    top: 376px;
+    right: 34px;
+  }
+}
+
+.hero__img-trucks--desktop {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 34px;
+  }
+}
+
+.hero__img-cafe--desktop {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    top: 160px;
+    right: 34px;
   }
 }
