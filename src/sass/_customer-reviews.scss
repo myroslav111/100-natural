@@ -9,11 +9,11 @@
   max-width: 926px;
 margin: 0 auto;
 background: #FAFAFA;
-margin-bottom: 34px;
 }
 
 .customer-reviews__text {
 font-family: DM Sans;
+position: relative;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -23,11 +23,6 @@ text-align: center;
     background-image: repeating-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0) 29px,#e1e1e1 0,#e1e1e1 30px);
     letter-spacing: .04em;
 }
-
-/* .customer-reviews__filling::before {
-  margin-right: 16px;
-  background-image: url("https://cdn-icons-png.flaticon.com/512/599/599502.png");
-} */
 
 .customer-reviews__name {
 font-family: DM Sans;
@@ -43,9 +38,7 @@ margin: 0 auto;
 
 .customer-reviews__name::before {
   content: '. . .';
-  position: absolute;
-  color: aqua;
-  display: inline-block;
-  top: -44px;
-  left: 71px;
+  color: #C7133E;
+  display: flex;
+  justify-content: center;
 }
