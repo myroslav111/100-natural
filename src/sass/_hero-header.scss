@@ -1,38 +1,29 @@
 
 .header{
-    // display: block;
-    // width: 100%;
-    padding-top: 6px;
-    padding-bottom: 6px;
+   display: block;
+    width: 100%;
+  
     background-color: #FFB8CA;
-    margin-bottom: 100px;
-    @media screen and (min-width: 768px) {
-      padding-top: 36px;
-
-    }
+    
 }
 
 .header__container {
-  // padding-top: 6px;
-  // padding-bottom: 6px;
-//   width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
 
-//   margin: 0 auto;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   outline: 1px solid red;
-//   @media screen and (min-width: 480px) {
-//     min-width: 480px;
-//   }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
 
-//   @media screen and (min-width: 768px) {
-//     min-width: 768px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     width: 1200px;
-//   }
-// margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .header__body{
@@ -40,8 +31,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // padding-top: 6px;
-    // padding-bottom: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .header__wrapper{
@@ -73,12 +64,11 @@ font-size: 16px;
 line-height: 21px;
 color: #D41443;
 border: none;
-width: 160px;
+width: 209px;
 height: 44px;
 background: #FFFFFF;
 border-radius: 22px;
 text-align: center;
-margin-left: 30px;
 }
 
 
@@ -86,7 +76,7 @@ margin-left: 30px;
   display: none;
    @media screen and (min-width: 768px) {
    display: block;
-  //  width: 186px;
+   width: 186px;
   }
 }
 
@@ -99,9 +89,8 @@ margin-left: 30px;
 .mob_button::after{
     content: '';
     display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-left: 8px;
+    width: 6px;
+    height: 6px;
     border-right: 2px solid #D41443;
     border-top: 2px solid #D41443;
     transform: rotate(45deg);
@@ -149,7 +138,7 @@ color: #fff;
       width: 30px;
       height: 25px;
       z-index: 50;
-      // margin-right: 30px;
+      margin-right: 30px;
      &::before,
      &::after{
          content: '';
