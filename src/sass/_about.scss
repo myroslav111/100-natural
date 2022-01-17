@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   background-color: getColor('background-about');
   padding-top: 125px;
 
@@ -7,14 +8,33 @@
   }
 }
 
-// .bcg-wrap-milk {
-//   margin: 0 auto;
-//   background-image: url('../images/About/mobail/about2_png.png');
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   background-position: center;
-//   max-width: 480px;
-// }
+.about__bcg-wrap-milk {
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/About/mobail/about2_png.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 640px;
+    max-width: 480px;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/About/mobail/about2@2x_png.png');
+    }
+  }
+}
+.about__bcg-wrap-milk {
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/About/desktop/About1_png_desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 115px;
+    max-width: 1280px;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/About/desktop/about1@2x_png_desktop.png');
+    }
+  }
+}
+
 .about-wrapper__pre-title {
   font-family: Titan One;
   font-size: getFont('lable-size-mobile');
@@ -98,6 +118,19 @@
   }
 }
 
+// .text-inner::after {
+//   content: '';
+//   position: absolute;
+//   z-index: 1;
+//   top: 600px;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background-image: url('../images/About/mobail/about2_png.png');
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }
+
 .text-inner__top {
   font-family: DM Sans;
   font-weight: 500;
@@ -107,9 +140,12 @@
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     font-size: getFont('secondary-size-mobile');
+    line-height: 1.76;
   }
   @media screen and (min-width: 1200px) {
     font-size: getFont('samebtn-size-mobile');
+
+    letter-spacing: 0.04em;
   }
 }
 
@@ -122,9 +158,11 @@
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     font-size: getFont('secondary-size-mobile');
+    line-height: 1.76;
   }
   @media screen and (min-width: 1200px) {
     font-size: getFont('samebtn-size-mobile');
+    line-height: 1.94;
   }
 }
 
@@ -144,6 +182,8 @@
     margin-bottom: 45px;
   }
 }
+
+// height: 44px;
 
 .about-btn {
   display: inline-block;
@@ -165,8 +205,21 @@
   &:focus {
     background-color: #ecebeb;
   }
+  @media screen and (min-width: 768px) {
+    font-size: getFont('samebtn-size-mobile');
+  }
 }
 
 .about-btn::after {
   content: '';
+  display: inline-block;
+  margin-left: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid getColor('title-color-main-text');
+  border-top: 2px solid getColor('title-color-main-text');
+  transform: rotate(45deg);
+  border-radius: 2px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
