@@ -463,10 +463,17 @@
   }
 }
 .hero__circle--tab {
-  width: 17px;
-  height: 17px;
+  width: 26px;
+  height: 26px;
   background-color: #fff;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__icon {
+  fill: #d41443;
 }
 
 .hero__img-circle--desktop {
