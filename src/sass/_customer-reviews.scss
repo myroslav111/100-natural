@@ -5,7 +5,8 @@
 }
 
 .customer-reviews__div-text {
-    padding: 32px 50px;
+  position: relative;
+    padding: 47px 89px 39px 87px;
   max-width: 926px;
 margin: 0 auto;
 background: #FAFAFA;
@@ -22,6 +23,13 @@ text-align: center;
     color: #000000;
     background-image: repeating-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0) 29px,#e1e1e1 0,#e1e1e1 30px);
     letter-spacing: .04em;
+}
+
+.customer-reviews__div-text::before {
+  content: url(../images/CustomerReviews/CustomerReviews4_png_desktop.png);
+  position: absolute;
+  left: 51px;
+  top: 35px;
 }
 
 .customer-reviews__name {
