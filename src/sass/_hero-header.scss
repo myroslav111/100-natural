@@ -22,10 +22,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    z-index: 1;
   }
 
   @media screen and (min-width: 1200px) {
+    z-index: 1;
   }
 }
 
