@@ -18,6 +18,14 @@ text-align: center;
 text-transform: uppercase;
 color: getColor('lable-color-text');
 margin-bottom: 15px;
+@media screen and (min-width: 768px){
+    font-size: getFont('pretitle-hero-mobile');
+    line-height: 1.15;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: getFont('lable-size-laptop');
+        line-height: 1.13;
+        }
 }
 
 .products_title{
@@ -31,6 +39,16 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: getColor('title-color-main-text');
 margin-bottom: 144px;
+@media screen and (min-width: 768px){
+    font-size: getFont('title-hero-mobile');
+    line-height: 1.15;
+    margin-bottom: 150px;
+    }
+@media screen and (min-width: 1200px){
+    font-size: getFont('title-hero-laptop');
+    line-height: 1.13;
+    margin-bottom: 259px;
+    }
 }
 
 .icecream_list{
@@ -38,16 +56,44 @@ margin-bottom: 144px;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    @media screen and (min-width: 768px){
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
 }
 
 .icecream_item{
-    background-color: getColor('background-hero');
     border-radius: 24px;
     max-width: inherit;
     padding: 120px 39px 41px 41px;
     &:not(:last-child){
         margin-bottom: 130px;
     }
+    @media screen and (min-width: 768px){
+        padding: 120px 11px 40px 11px;
+        &:not(:last-child){
+            margin-right: 20px; 
+            margin-bottom: 0;
+        }
+        }
+        @media screen and (min-width: 1200px){
+            padding: 120px 45px 50px 44px;
+            &:not(:last-child){
+                margin-right: 30px; 
+            }
+            }
+}
+
+.cream{
+    background-color: getColor('background-hero');
+}
+
+.cofee{
+    background-color: getColor('background-card-coffee');
+}
+
+.milkshakes_item{
+    background-color: getColor('background-card-milk');
 }
 
 .icecream_title{
@@ -63,25 +109,107 @@ color: getColor('mine-color-text');
 margin-bottom: 36px;
 padding-top: 30px;
 position: relative;
-&::before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -115%);
-    width: 249px;
-    height: 252px;
-    background-image: url('../images/Products/mobail/products1_webp.webp');
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: contain;
-    }
     &::after{
         content: '...';
         display: flex;
         justify-content: center;
         margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: getFont('lable-size-laptop');
+        line-height: 1.13;
+        padding-top: 50px;
+    }
+}
+
+
+.icecream::before{
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -115%);
+    background-image: url('../images/Products/mobail/products1_png.png');
+    width: 249px;
+    height: 252px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/Products/mobail/products1@2x_png.png');
+    }
+    @media screen and (min-width: 768px) {
+        width: 220px;
+        height: 226px;
+        transform: translate(-50%, -122%);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 335px;
+        height: 335px;
+    }
+}
+
+.icecoffe::before{
+        content: '';
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -115%);
+        background-image: url('../images/Products/mobail/products2_png.png');
+        width: 249px;
+        height: 252px;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/Products/mobail/products2@2x_png.png');
+        }
+        @media screen and (min-width: 768px) {
+            width: 220px;
+            height: 226px;
+            transform: translate(-50%, -122%);
+        }
+        @media screen and (min-width: 1200px) {
+            width: 335px;
+            height: 335px;
+        }
+}
+
+.milkshakes::before{
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -115%);
+    background-image: url('../images/Products/mobail/products3_png.png');
+    width: 249px;
+    height: 252px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/Products/mobail/products3@2x_png.png');
+    }
+    @media screen and (min-width: 768px) {
+        width: 220px;
+        height: 226px;
+        transform: translate(-50%, -122%);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 335px;
+        height: 335px;
     }
 }
 
@@ -95,6 +223,40 @@ text-align: center;
 letter-spacing: 0.04em;
 color: getColor('mine-color-text');
 margin-bottom: 30px;
+max-width: 200px;
+margin: 0 auto;
+    @media screen and (min-width: 768px){
+        display: none;
+    line-height: 1.79;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: getFont('samebtn-size-mobile');
+        line-height: 1.75;
+        }
+}
+
+.icecream_text--tablet{
+    display: none;
+    font-family: DM Sans;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.75;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+max-width: 198px;
+margin-bottom: 40px;
+    @media screen and (min-width: 768px){
+    display: block;
+    line-height: 1.79;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: getFont('samebtn-size-mobile');
+        line-height: 1.75;
+        max-width: 241px;
+        margin-bottom: 62px;
+        }
 }
 
 .icecream-btn{
@@ -105,7 +267,8 @@ margin-bottom: 30px;
     border: none;
     margin: auto;
     display: block;
-    color: red;
+    color: getColor('title-color-main-text');
+    margin-top: 30px;
 }
 
 .isecream-btn_icon{
