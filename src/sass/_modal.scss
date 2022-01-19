@@ -64,6 +64,32 @@
   line-height: 1.31;
   letter-spacing: 0.06em;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.85;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+
+    letter-spacing: 0.04em;
+  }
+}
+
+.modal__text {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.85;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+
+    letter-spacing: 0.04em;
+  }
 }
 
 /* modal-contacts-start */
