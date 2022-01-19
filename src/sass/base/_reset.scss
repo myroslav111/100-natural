@@ -1,5 +1,11 @@
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+}
 body {
-    font-family: ' DM Sans';
+  font-family: ' DM Sans';
 }
 p,
 h1,
@@ -32,7 +38,9 @@ a {
   text-decoration: none;
 }
 
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   border: 0;
