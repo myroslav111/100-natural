@@ -269,8 +269,54 @@ margin-bottom: 40px;
     display: block;
     color: getColor('title-color-main-text');
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .isecream-btn_icon{
     fill: currentColor;
 }
+
+.blink {
+    background-color: getColor('background-menu-mobile');
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
+    @media screen and (min-width: 768px){
+        background-color: getColor('background-products');
+    }
+    @media screen and (min-width: 1200px){
+        background-color: getColor('gray-color-text');
+    }
+  }
+  
+  @-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+  
+  @keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
