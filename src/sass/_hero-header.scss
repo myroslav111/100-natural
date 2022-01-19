@@ -602,11 +602,15 @@
   }
 }
 
-.blink {
-  background-color: #fff;
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  -webkit-animation: pulsing 2s infinite;
-  animation: pulsing 2s infinite;
+// .blink {
+//   background-color: #fff;
+//   border-radius: 100%;
+//   width: 40px;
+//   height: 40px;
+//   -webkit-animation: pulsing 2s infinite;
+//   animation: pulsing 2s infinite;
+// }
+
+.hero__circle--tab{
+  cursor: pointer;
 }
