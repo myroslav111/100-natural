@@ -65,3 +65,42 @@
   letter-spacing: 0.06em;
   text-align: center;
 }
+
+/* modal-contacts-start */
+.modal__contacts {
+  background-color: #000000;
+}
+
+.modal__title-map {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.31;
+  letter-spacing: 0.04em;
+  color: #ce6fb6;
+  text-align: center;
+}
+
+.img-map {
+  background-image: url('../images/Contacts/map.jpg');
+  width: 800px;
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 15px;
+}
+
+.modal__franchise {
+  background-color: #ffb8ca;
+}
+
+.img-franchise {
+  background-image: url('../images/Contacts/franchise.jpg');
+  width: 1000px;
+  height: 520px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* modal-contacts-end */
