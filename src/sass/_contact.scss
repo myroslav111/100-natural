@@ -353,21 +353,17 @@
   border-top: 2px solid getColor('mine-color-text');
 }
 
-/* .button-one {
-  margin-top: 54px;
-} */
-
-.button-two {
+.button-last {
   background-color: getColor('mine-color-text');
   color: getColor('title-color-main-text');
 }
 
-.button-two:hover {
+.button-last:hover {
   background-color: #ecebeb;
   color: getColor('title-color-main-text');
 }
 
-.button-two::after {
+.button-last::after {
   content: '';
   display: inline-block;
   width: 8px;
@@ -381,7 +377,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-two:hover::after {
+.button-last:hover::after {
   transform: rotate(225deg);
   border-right: 2px solid getColor('title-color-main-text');
   border-top: 2px solid getColor('title-color-main-text');
