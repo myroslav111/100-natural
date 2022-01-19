@@ -71,36 +71,153 @@
   background-color: #000000;
 }
 
+.modal__cross-locations {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    top: 10px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
 .modal__title-map {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.31;
   letter-spacing: 0.04em;
   color: #ce6fb6;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .img-map {
   background-image: url('../images/Contacts/map.jpg');
-  width: 800px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 550px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 800px;
+    height: 600px;
+  }
+}
+
+.modal__cross-map {
+  position: absolute;
+  top: 4px;
+  right: 53px;
+  width: 12px;
+  height: 12px;
+  fill: #ffffff;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    top: 2px;
+    right: 60px;
+    width: 14px;
+    height: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 0px;
+    right: 70px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.modal-contacts__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 10px;
+  }
+}
+
+.modal-contacts__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.modal-contacts__link {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.31;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .modal__franchise {
   background-color: #ffb8ca;
+  border-radius: 0px;
+  padding: 0;
+}
+
+.modal__cross-franchise {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .img-franchise {
   background-image: url('../images/Contacts/franchise.jpg');
-  width: 1000px;
-  height: 520px;
+  width: 300px;
+  height: 157px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (min-width: 768px) {
+    width: 680px;
+    height: 355px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1000px;
+    height: 525px;
+  }
 }
 /* modal-contacts-end */
