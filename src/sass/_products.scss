@@ -277,18 +277,12 @@ margin-bottom: 40px;
 }
 
 .blink {
-    background-color: getColor('background-menu-mobile');
+    background-color: getColor('mine-color-text');
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
     -webkit-animation: pulsing 2s infinite;
     animation: pulsing 2s infinite;
-    @media screen and (min-width: 768px){
-        background-color: getColor('background-products');
-    }
-    @media screen and (min-width: 1200px){
-        background-color: getColor('gray-color-text');
-    }
   }
   
   @-webkit-keyframes pulsing {
