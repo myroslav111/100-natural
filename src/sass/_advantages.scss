@@ -5,7 +5,7 @@
   @media screen and (min-width: 768px) {
     padding-top: 105px;
     padding-bottom: 5px;
-    margin-bottom: -70px;
+    // margin-bottom: 0px;
   }
 }
 
@@ -39,8 +39,6 @@
   }
 }
 
-.container {
-}
 .visually-hidden {
 }
 .advantages__list {
@@ -55,8 +53,11 @@
     margin: -15px;
   }
 }
-.advantages__item:not(:last-child) {
+
+@media screen and (max-width: 767.99px) {
+    .advantages__item:not(:last-child) {
   margin-bottom: 104px;
+  }
 }
 
 .advantages__item {

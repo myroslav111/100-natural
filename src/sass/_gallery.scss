@@ -1,5 +1,6 @@
 .gallery {
   padding-bottom: 40px;
+  padding-top: 10px;
   @include mq(tablet) {
     padding-bottom: 60px;
   }
