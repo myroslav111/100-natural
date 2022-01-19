@@ -10,9 +10,6 @@
   }
 }
 
-.logo{
-  
-}
 
 .header__body {
   position: relative;
@@ -102,6 +99,10 @@
     margin-right: 35px;
   }
 }
+.header__item:hover{
+    
+    cursor: pointer;
+}
 
 .header__link {
   font-family: DM Sans;
@@ -110,6 +111,9 @@
   font-size: 16px;
   line-height: 1.3px;
   color: #fff;
+  &:hover{
+    color: #d41443;
+  }
 }
 .content {
   padding-top: 65px;
@@ -256,7 +260,7 @@
   position: relative;
   z-index: 3;
   @media screen and (min-width: 768px) {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
   @media screen and (min-width: 1200px) {
     padding-left: 0px;
