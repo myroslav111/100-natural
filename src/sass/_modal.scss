@@ -35,6 +35,10 @@
   visibility: visible;
 }
 
+.modal[data-modal='bio-eco-milk'] {
+  background-color: #fffeff;
+}
+
 .modal[data-modal='product-description-1'] {
   background-color: #ce6fb6;
 }
@@ -139,19 +143,19 @@
 
 .img-map {
   background-image: url('../images/Contacts/map.jpg');
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center 15px;
 
   @media screen and (min-width: 768px) {
-    width: 600px;
-    height: 550px;
+    width: 300px;
+    height: 300px;
   }
   @media screen and (min-width: 1200px) {
-    width: 800px;
-    height: 600px;
+    width: 350px;
+    height: 350px;
   }
 }
 
