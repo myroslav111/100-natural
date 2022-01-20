@@ -35,6 +35,10 @@
   visibility: visible;
 }
 
+.modal[data-modal='bio-eco-milk'] {
+  background-color: #fffeff;
+}
+
 .modal[data-modal='product-description-1'] {
   background-color: #ce6fb6;
 }
