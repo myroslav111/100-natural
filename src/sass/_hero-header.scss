@@ -55,6 +55,18 @@
   border-radius: 22px;
   text-align: center;
   margin-left: 30px;
+  @media screen and (min-width: 1200px){
+    margin-left: 0;
+  }
+}
+
+.btnLink{
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #d41443;
 }
 
 .header__button {
