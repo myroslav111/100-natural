@@ -4,50 +4,50 @@
 // font seze
 
 // $fontFamilyMain: "DM Sans";
-$fontsecond: "Titan One";
+$fontsecond: 'Titan One';
 
 // key color
 $colors: (
-    'background-menu-mobile': #E17992,
-    'background-hero':#FFB8CA,
-    'background-about':#FFF5F6,
-    'background-products':#E5E5E5,
-    'background-card-coffee': #F0D1A5,
-    'background-card-milk': #C2E297,
-    'background-cafe':#F0D1A5,
-    'background-FOOD-TRUCK': #C2E297,
-    'title-color-main-text': #D41443,
-    'mine-color-text': #ffffff,
-    'secondary-color-text': #000000,
-    'lable-color-text': #FFA5BA,
-    'gray-color-text':#907E82,
-
+  'background-menu-mobile': #e17992,
+  'background-hero': #ffb8ca,
+  'background-about': #fff5f6,
+  'background-products': #e5e5e5,
+  'background-card-coffee': #f0d1a5,
+  'background-card-milk': #c2e297,
+  'background-cafe': #f0d1a5,
+  'background-FOOD-TRUCK': #c2e297,
+  'background-main-link': #fea5bb,
+  'title-color-main-text': #d41443,
+  'mine-color-text': #ffffff,
+  'secondary-color-text': #000000,
+  'lable-color-text': #ffa5ba,
+  'gray-color-text': #907e82,
+  'header-modal-milk': #fffeff,
+  'modal-title-map': #ce6fb6,
 );
 @function getColor($key) {
-@return map-get($colors, $key);
+  @return map-get($colors, $key);
 }
 
 // key font
 $fontSize: (
-    'title-hero-mobile': 48px,
-    'pretitle-hero-mobile': 26px,
-    'link-hero-mobie': 8px,
-    'secondary-size-mobile': 14px,
-    'mine-size-mobile': 12px,
-    'samebtn-size-mobile':16px,
-    'lable-size-mobile': 18px,
-    'title-secondary-mobile': 34px,
-    'title-card-mobile': 20px,
-    'number-size-mobile': 36px,
-
-    'pretitle-hero-tab': 22px,
-    'number-hero-tab': 28px,
-
-    'pretitle-hero-laptop': 38px,
-    'title-hero-laptop': 58px,
-    'lable-size-laptop': 30px
-
+  'title-hero-mobile': 48px,
+  'pretitle-hero-mobile': 26px,
+  'link-hero-mobie': 8px,
+  'secondary-size-mobile': 14px,
+  'mine-size-mobile': 12px,
+  'samebtn-size-mobile': 16px,
+  'lable-size-mobile': 18px,
+  'title-secondary-mobile': 34px,
+  'title-card-mobile': 20px,
+  'number-size-mobile': 36px,
+  'pretitle-hero-tab': 22px,
+  'number-hero-tab': 28px,
+  'pretitle-hero-laptop': 38px,
+  'title-hero-laptop': 58px,
+  'lable-size-laptop': 30px,
+  'modal-title-desktop': 24px,
 );
 @function getFont($key) {
-@return map-get($fontSize , $key);
+  @return map-get($fontSize, $key);
 }
